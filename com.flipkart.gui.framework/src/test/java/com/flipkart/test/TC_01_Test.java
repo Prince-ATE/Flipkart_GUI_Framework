@@ -17,8 +17,10 @@ public class TC_01_Test extends Base_Class {
 	@Test
 	public void fetchPriceOfMensKurta() throws InterruptedException {
 		
+		
 		WelcomePage welcomePage = new WelcomePage(driver);
 		welcomePage.getCrossButton().click();
+		
 			
 		Assert.assertEquals(welcomePage.getFashionTab().isDisplayed(), true);
 		ListImpClass.test.log(Status.INFO, "Navigated to Welcome page");
